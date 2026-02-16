@@ -46,3 +46,25 @@ Acts as a data quality gate
 
 <h2> Athena → Microsoft Fabric Warehouse: JSON Function Mapping (with alternatives) </h2>
 This repo includes migration-friendly patterns for teams moving JSON workloads from AWS Athena (Presto/Trino functions) to Microsoft Fabric Warehouse (T‑SQL JSON functions)
+
+🧬 JSON Capabilities Demonstrated
+This runbook covers real‑world JSON patterns, including:
+
+- ✅ Scalar extraction (JSON_VALUE)
+- ✅ Object extraction (JSON_QUERY)
+- ✅ Nested objects (address.geo.lat)
+- ✅ Arrays of objects (orders[], items[])
+- ✅ Arrays of scalars (coupons[])
+- ✅ Map / dictionary objects (meta { key : value })
+- ✅ Safe parsing using OPENJSON(parentJson, '$.path')
+- ✅ Defensive handling of malformed JSON
+
+<h2>🔄 AWS Athena → Fabric Migration Patterns</h2>
+
+The repo implicitly demonstrates how common Athena patterns translate to Fabric:
+
+- ✅ json_extract_scalar → JSON_VALUE
+- ✅ json_extract → JSON_QUERY
+- ✅ UNNEST(array) → OPENJSON(json, '$.array')
+- ✅ Nested UNNEST → chained OPENJSON
+- ✅ TRANSFORM / REDUCE → relationalize → aggregate
