@@ -3,13 +3,13 @@ This repository contains sample data, scripts, and practical approaches for stor
 
 It demonstrates:
 
-✅ Recommended patterns to store JSON data
-✅ How to validate and inspect JSON using Fabric Warehouse built‑in functions
-✅ Techniques to extract scalars, objects, and arrays from JSON
-✅ Methods to flatten nested JSON and arrays using OPENJSON
-✅ JSON construction and output patterns using JSON_OBJECT, JSON_ARRAY, and FOR JSON
-✅ Function equivalence and migration guidance for teams moving from AWS Athena to Fabric Warehouse
-✅ Athena patterns translattion to Fabric
+- ✅ Recommended patterns to store JSON data
+- ✅ How to validate and inspect JSON using Fabric Warehouse built‑in functions
+- ✅ Techniques to extract scalars, objects, and arrays from JSON
+- ✅ Methods to flatten nested JSON and arrays using OPENJSON
+- ✅ JSON construction and output patterns using JSON_OBJECT, JSON_ARRAY, and FOR JSON
+- ✅ Function equivalence and migration guidance for teams moving from AWS Athena to Fabric Warehouse
+- ✅ Athena patterns translattion to Fabric
 
 The repository is intended for Learning and to showcase capabilities of Azure Fabric Warehouse in handling JSON data and intended for:
 
