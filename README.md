@@ -68,3 +68,15 @@ The repo implicitly demonstrates how common Athena patterns translate to Fabric:
 - ✅ UNNEST(array) → OPENJSON(json, '$.array')
 - ✅ Nested UNNEST → chained OPENJSON
 - ✅ TRANSFORM / REDUCE → relationalize → aggregate
+
+## Disclaimer
+
+This repository is intended **for testing, learning, and demonstration purposes only**.
+
+- The scripts and examples in this repository are **not production‑ready** and should be used as **reference implementations**.
+- Microsoft Fabric, including **Fabric Warehouse JSON support**, is an actively evolving platform.
+- **New JSON functions, enhancements, or alternative approaches may become available** in Azure Fabric over time.
+- Some patterns demonstrated here may be simplified, optimized, or replaced by native features in future Fabric releases.
+- Always refer to the **official Microsoft Fabric documentation** for the latest supported features, data types, and best practices before implementing in production environments.
+
+Use this repository to understand concepts, migration patterns (e.g., Athena → Fabric), and recommended design approaches—but **validate all implementations against current Fabric capabilities**.
